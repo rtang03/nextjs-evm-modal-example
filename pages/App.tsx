@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/no-use-before-define */
-/* eslint-disable no-console */
-/* eslint-disable @typescript-eslint/no-shadow */
 import { CHAIN_NAMESPACES, SafeEventEmitterProvider } from "@web3auth/base";
 import { MetamaskAdapter } from "@web3auth/metamask-adapter";
 import { Web3Auth } from "@web3auth/modal";
@@ -298,7 +295,6 @@ function App() {
     uiConsole(privateKey);
   };
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function uiConsole(...args: any[]): void {
     const el = document.querySelector("#console>p");
     if (el) {
